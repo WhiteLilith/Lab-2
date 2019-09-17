@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, AC, BC;
+            Console.Write("Задайте точку A: ");
+            A = double.Parse(Console.ReadLine());
+            Console.Write("Задайте точку B: ");
+            B = double.Parse(Console.ReadLine());
+            Console.Write("Задайте точку C: ");
+            C = double.Parse(Console.ReadLine());
+            AC = Math.Abs(A - C);
+            BC = Math.Abs(B - C);
+            Console.Write("Произведение длин отрезков АС и ВС равна ");
+            Console.WriteLine(AC * BC);
+            Console.ReadKey();
+        }
+    }
+}
