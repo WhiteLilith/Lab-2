@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double xA, yA, xB, yB, p, s, x, y;
+            Console.Write("Введите координаты первой вершины(хА, уА): ");
+            xA = double.Parse(Console.ReadLine());
+            yA = double.Parse(Console.ReadLine());
+            Console.Write("Введите координаты первой вершины(хB, уB): ");
+            xB = double.Parse(Console.ReadLine());
+            yB = double.Parse(Console.ReadLine());
+            x = Math.Abs(xA - xB);
+            y = Math.Abs(yA - yB);
+            p = 2 * (x + y);
+            s = x * y;
+            Console.Write("Пеример прямоугольника равен: ");
+            Console.WriteLine(p);
+            Console.Write("Площадь прямоугльника равна: ");
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+    }
+}
